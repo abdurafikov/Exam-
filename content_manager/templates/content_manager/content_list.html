@@ -1,0 +1,23 @@
+<!-- content_manager/templates/content_manager/content_list.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content List</title>
+</head>
+<body>
+    <h1>Content List</h1>
+    <ul>
+        {% for content in contents %}
+            <li>{{ content.title }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
+<!-- content_manager/templates/content_manager/content_list.html -->
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <!-- Qolgan HTML kod -->
+</head>
